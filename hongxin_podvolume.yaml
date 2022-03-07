@@ -17,6 +17,6 @@ spec:
   volumes:
   - name: app-storage
     hostPath:
-      path /tmp/filies
+      path /tmp/files
     
 
