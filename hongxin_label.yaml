@@ -16,7 +16,7 @@ spec:
                 values:
                 - redis
             topologyKey: topology.kubernetes.io/zone
-  podAntiAffinity:
+        podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
           - labelSelector:
                 matchExpressions:
