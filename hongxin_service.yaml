@@ -19,7 +19,7 @@ spec:
       maxUnavailable: 0
   template:
     metadata:
-      labels:
+      labels: ui
         tier: frontend
       name: cuda-test
     spec:
@@ -50,7 +50,7 @@ spec:
       maxUnavailable: 0
   template:
     metadata:
-      labels:
+      labels: ui
         tier: frontend
       name: cuda-test
     spec:
