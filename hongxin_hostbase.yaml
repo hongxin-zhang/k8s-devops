@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: hongxin.com
+  - host: hongxin-52.215.245.101.nip.io
     http:
       paths:
       - path: /bear(/|$)(.*)
