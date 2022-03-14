@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-with-auth
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+
+
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: hongxin.com
+    http:
+      paths:
+      - path: /bear(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+             name: bear-svc
+             port:
+                number: 80
+      - path: /moose(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+             name: moose-svc
+             port:
+                number: 80
