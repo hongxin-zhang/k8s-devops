@@ -4,10 +4,8 @@ metadata:
   name: "{{ .Chart.Name }}-{{ .Chart.Version }}"
   {{- include "spring.labels" .  }}
 spec:
-  # here we select the number of pods we wish to start and the selector that tells our replica set which pods it needs 
-  #  to manage
   replicas: {{ .Values.pods.replica }}
-  selector:  # Using the selector we tell our replicaset which pods to manage
+  selector:
    {{- include "spring.labels" . | nindent 2 }}
   template:
     metadata:
