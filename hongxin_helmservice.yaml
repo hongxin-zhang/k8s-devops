@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service      # Create new service 
+metadata:
+  name: spring-music
+  {{- include "spring.labels" .  }}
+spec:
+  type: LoadBalancer
+  ports:          # Map incoming port to target port
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
