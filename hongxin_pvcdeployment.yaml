@@ -39,7 +39,7 @@ metadata:
 provisioner: kubernetes.io/aws-ebs
 parameters:
   type: io1
-  iopsPerGB: "4"
+  iopsPerGB: "100"
   fsType: ext4
 
 ---
