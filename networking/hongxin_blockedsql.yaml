@@ -6,7 +6,7 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      role: mysql
+      app: mysql
   policyTypes:
   - Ingress
   - Egress
@@ -14,7 +14,7 @@ spec:
   - from:
     - podSelector:
         matchLabels:
-          role: blocked
+          app: wordpress
     ports:
     - protocol: TCP
       port: 3306
