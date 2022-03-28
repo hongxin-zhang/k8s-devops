@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: initmap
 data:
-  gitUrl: 
+  gitUrl: https://github.com/hongxin-zhang/k8s-devops/tree/main/c-init
