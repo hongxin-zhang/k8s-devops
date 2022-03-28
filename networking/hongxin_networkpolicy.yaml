@@ -14,6 +14,7 @@ spec:
   - from:
     - podSelector:
         matchLabels:
+          app: wordpress
           role: frontend
     ports:
     - protocol: TCP

@@ -4,6 +4,7 @@ kind: Pod
 metadata:
   name: mysql-client-allowed
   labels:
+   app: wordpress
    role: frontend
 spec:
       containers:
