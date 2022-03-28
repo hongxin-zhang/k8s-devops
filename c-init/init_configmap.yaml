@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: initmap
+data:
+  source: "https://github.com/hongxin-zhang/k8s-devops/c-init"
